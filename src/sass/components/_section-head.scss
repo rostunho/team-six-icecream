@@ -1,6 +1,5 @@
 .section-head {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 
   &--master {
     margin-left: 0px;
@@ -8,6 +7,8 @@
 }
 
 .section-head__title {
+  margin: 0 auto;
+
   font-family: 'Titan One', cursive;
   font-size: 34px;
   line-height: 1.147;
@@ -15,5 +16,40 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: ;
+  color: $accentColor;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.146;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.138;
+    letter-spacing: 0.06em;
+  }
+}
+
+.section-head__label {
+  margin: 0 auto;
+
+  font-family: Titan One, cursive;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.167;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $accentTextColor;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.584;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.133;
+    letter-spacing: 0.04em;
+  }
 }
