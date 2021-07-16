@@ -5,6 +5,9 @@
 
 // Стили для файла с примером HTML-фрагмента
 
+@import './base/reset';
+@import './base/typography';
+
 @import './layouts/hero-header';
 @import './layouts/products';
 @import './layouts/about';

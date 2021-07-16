@@ -1,0 +1,19 @@
+.section-head {
+  margin-left: auto;
+  margin-right: auto;
+
+  &--master {
+    margin-left: 0px;
+  }
+}
+
+.section-head__title {
+  font-family: 'Titan One', cursive;
+  font-size: 34px;
+  line-height: 1.147;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: ;
+}
