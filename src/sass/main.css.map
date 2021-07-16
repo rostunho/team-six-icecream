@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;GAGG;AOHH,AAAA,gBAAgB,CAAA;EACZ,UAAU,EAAE,MAAM;CACrB;;AAED,AAAA,0BAA0B,CAAA;EACtB,UAAU,EAAE,UAAU;EACtB,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAAC,OAAO;EACxB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CACtB;;AEXD,AAAA,QAAQ,CAAC;EACP,WAAW,EAAE,4HAC8B;EAC3C,WAAW,EAAE,GAAG;EAChB,gBAAgB,EAAE,IAAI;EACtB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,KAAK;EAChB,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,QAAQ,CAAC,IAAI,CAAC;EACZ,WAAW,EAAE,SAAS;EACtB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,OAAO;EAChB,aAAa,EAAE,GAAG;CACnB;;AAED,AAAA,QAAQ,CAAC,WAAW,CAAC;EACnB,MAAM,EAAE,KAAK;EAEb,gBAAgB,EAAE,yBAAyB;EAC3C,eAAe,EAAE,KAAK;EACtB,mBAAmB,EAAE,MAAM;CAC5B",
+    "sources": [
+        "main.scss",
+        "layouts/_hero-header.scss",
+        "layouts/_products.scss",
+        "layouts/_about.scss",
+        "layouts/_advantages.scss",
+        "layouts/_gallery.scss",
+        "layouts/_customer-reviews.scss",
+        "layouts/_contacts.scss",
+        "layouts/_footer.scss",
+        "_example.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
