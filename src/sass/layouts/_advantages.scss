@@ -62,10 +62,22 @@
   letter-spacing: 1.138;
   text-transform: uppercase;
   margin: 16px 0;
+
+  @media screen and (min-width: 481px) {
+    text-transform: none;
+    font-size: 48px;
+    letter-spacing: 1.145;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-transform: none;
+    font-size: 58px;
+    letter-spacing: 1.145;
+  }
 }
 
-.counters__number--text {
-  display: inline;
+.counters__block {
+  display: inline-flex;
 }
 
 .counters__text {
