@@ -4,6 +4,20 @@
   &--master {
     margin-left: 0px;
   }
+
+  &--hidded {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
 
 .section-head__title {
@@ -31,7 +45,8 @@
 }
 
 .section-head__label {
-  margin: 0 auto;
+  display: block;
+  margin: 0 auto 15px;
 
   font-family: Titan One, cursive;
   font-weight: normal;
@@ -44,7 +59,7 @@
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
-    line-height: 1.584;
+    line-height: 1.154;
   }
 
   @media screen and (min-width: 1280px) {
