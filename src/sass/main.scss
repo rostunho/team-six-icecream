@@ -5,6 +5,8 @@
 
 // Стили для файла с примером HTML-фрагмента
 
+@import './base/colors';
+@import './base/container';
 @import './base/reset';
 @import './base/typography';
 
@@ -16,5 +18,7 @@
 @import './layouts/customer-reviews';
 @import './layouts/contacts';
 @import './layouts/footer';
+
+@import './components/section-head';
 
 @import './example';
