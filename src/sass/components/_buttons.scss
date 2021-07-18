@@ -59,4 +59,12 @@
       line-height: 1.3125;
     }
   }
+
+  &--without-icon {
+    min-width: 100%;
+    padding: 6px 14px;
+
+    font-size: 8px;
+    line-height: 1.25;
+  }
 }
