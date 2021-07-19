@@ -1,6 +1,6 @@
 .customer-reviews {
-  //   display: flex;
   list-style: none;
+  overflow: hidden;
 }
 
 .customer__review {
@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   // width: 90%;
-  margin: 0 30px;
+  margin: 0 300px;
 }
 
 .customer__image {
@@ -26,48 +26,88 @@
   padding-bottom: 20px;
   background-color: #fafafa;
   margin: 0 auto;
-  width: 90vw;
+
   margin-bottom: 18px;
-}
 
-.review__text {
-  position: relative;
-  //   width: 180px;
-  //   height: 100%;
-  //   border: 1px solid tomato;
-  background-image: repeating-linear-gradient(
-    rgba(250, 250, 250, 0),
-    rgba(250, 250, 250, 0) 30px,
-    #e1e1e1 30px,
-    #e1e1e1 31px
-  );
-  //   border-bottom: 1px solid #fafafa;
-}
+  @media screen and (max-width: 480px) {
+    width: 90vw;
+  }
 
-.text {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 265%;
-  text-align: center;
-  color: #000000;
-  z-index: 15;
-}
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    max-width: 432px;
+  }
 
-.review::before {
-  content: '';
-  width: 54px;
-  height: 40px;
-  margin-bottom: 18px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../images/customer-reviews/quotes-min.png);
-  display: block;
-  position: absolute;
-  top: 28px;
-  left: 61px;
-  // z-index: 10;
+  @media screen and (min-width: 768px) {
+    max-width: 692px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1152px;
+  }
+
+  &__text {
+    position: relative;
+    background-image: repeating-linear-gradient(
+      rgba(250, 250, 250, 0),
+      rgba(250, 250, 250, 0) 30px,
+      #e1e1e1 30px,
+      #e1e1e1 31px
+    );
+
+    @media screen and (min-width: 768px) {
+      background-image: repeating-linear-gradient(
+        rgba(250, 250, 250, 0),
+        rgba(250, 250, 250, 0) 28px,
+        #e1e1e1 28px,
+        #e1e1e1 29px
+      );
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: repeating-linear-gradient(
+        rgba(250, 250, 250, 0),
+        rgba(250, 250, 250, 0) 27px,
+        #e1e1e1 27px,
+        #e1e1e1 28px
+      );
+    }
+  }
+
+  & .text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 265%;
+    text-align: center;
+    color: #000000;
+    z-index: 15;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 216%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 186%;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 54px;
+    height: 40px;
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/customer-reviews/quotes-min.png);
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: 61px;
+    // z-index: 10;
+  }
 }
 
 .customer__name::before {
@@ -107,21 +147,21 @@
     margin-right: 18px;
     border-radius: 50%;
   }
-}
 
-.slick-dots li {
-  border-radius: 50%;
+  & li {
+    border-radius: 50%;
 
-  &:not(:last-child) {
-    margin-right: 18px;
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
   }
-}
 
-.slick-dots button {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: none;
-  background-color: rgba(217, 217, 217, 0.555);
-  color: rgba(217, 217, 217, 0);
+  & button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(217, 217, 217, 0.555);
+    color: rgba(217, 217, 217, 0);
+  }
 }
