@@ -1,0 +1,114 @@
+.about {
+  background-color: $bgSecondaryColor;
+  padding-top: 125px;
+  padding-bottom: 0px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 27px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 125px;
+    padding-bottom: 0;
+  }
+}
+
+.about__container {
+  @media screen and (min-width: 1280px) {
+    padding: 0 20px;
+  }
+}
+
+.about__overlay {
+  background-position-y: 91%;
+  background-size: 100%;
+  background-image: url('../images/about/milk-mobile1.png');
+  background-repeat: no-repeat;
+  @media (min-width: 1280px) {
+    background-position: bottom;
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: url('../images/about/milk-mobile2.png');
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .overlay {
+    background-image: url('../images/about/milk-desctop1.png');
+  }
+  @media (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url('../images/about/milk-desctop1.png');
+    }
+  }
+}
+
+.about__content-picture {
+  margin-top: 26px;
+  align-self: center;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 17px) / 2);
+    margin-top: 0;
+    align-self: flex-start;
+  }
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 92px) / 2);
+  }
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-basis: auto;
+    margin-top: 50px;
+    @media screen and (min-width: 1280px) {
+      padding: 0 55px;
+    }
+  }
+}
+.about__description {
+  padding: 47px 30px 0 30px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin: 50px 0 0 auto;
+    flex-basis: calc((100% - 17px) / 2);
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+    margin: 50px 0 0 auto;
+    flex-basis: calc((100% - 92px) / 2);
+  }
+}
+
+.about {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  &__description-primery {
+    color: $darkTextColor;
+    margin-bottom: 40px;
+  }
+  &__description-secondary {
+    color: $middleTextColor;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.about__last-text {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 62px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 45px;
+  }
+}
