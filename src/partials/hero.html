@@ -1,27 +1,41 @@
 <section class="hero">
-  <div class="container hero__container">
+  <div class="hero__container">
     <div class="section-head hero__section-head">
       <h1 class="section-head__title section-head__title--master">
         <span class="section-head__label section-head__label--master"> ice cream made with</span>
         passion
       </h1>
       <ul class="section-head__list">
-        <li>
-          <a href="" class="button button--without-icon">Products</a>
+        <li class="section-head__item">
+          <a href="" class="section-head__link section-head__link--invert">Products</a>
         </li>
-        <li>
-          <a href="" class="button button--without-icon">How it’s made?</a>
+        <li class="section-head__item">
+          <a href="" class="section-head__link">How it’s made?</a>
         </li>
       </ul>
     </div>
 
-    <div class="hero__useful-info">
-      <img src="" alt="" class="useful-info__image" />
-      <p class="useful-info__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <button type="button" class="button button--small useful-info__button--small"></button>
+    <div class="hero__useful-info useful-info">
+      <picture class="useful-info__picture">
+        <source
+          srcset="./images/hero/milk-desktop@1x.png 1x, ./images/hero/milk-desktop@2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/hero/milk-tablet@1x.png 1x, ./images/hero/milk-tablet@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+
+        <img src="./images/hero/milk-tablet@1x.png" alt="fresh milk" class="useful-info__image" />
+      </picture>
+      <div class="useful-info__description">
+        <p class="useful-info__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button type="button" class="hero__button"></button>
+      </div>
     </div>
 
     <div class="places">
@@ -35,15 +49,47 @@
           <p class="places__text">food trucks</p>
         </li>
       </ul>
-      <img src="" alt="girl says: so tasty" class="places__image" />
+      <picture class="places__picture">
+        <source
+          srcset="./images/hero/girl-desktop@1x.png 1x, ./images/hero/girl-desktop@2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source srcset="./images/hero/girl-tablet@1x.png 1x, ./images/hero/girl-tablet@2x.png 2x" />
+
+        <img
+          src="./images/hero/girl-tablet@1x.png"
+          alt="girl says: so tasty"
+          class="places__image"
+        />
+      </picture>
     </div>
 
-    <div class="main-picture">
+    <picture class="main-picture">
+      <source
+        srcset="
+          ./images/hero/largest-icecream-desktop@1x.png 1x,
+          ./images/hero/largest-icecream-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)" />
+
+      <source
+        srcset="
+          ./images/hero/largest-icecream-tablet@1x.png 1x,
+          ./images/hero/largest-icecream-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)" />
+
+      <source
+        srcset="
+          ./images/hero/largest-icecream-phone@1x.png 1x,
+          ./images/hero/largest-icecream-phone@2x.png 2x
+        " />
+
       <img
         src="./images/hero/largest-icecream-phone@1x.png"
         alt="largest ice cream"
         class="main-picture__image"
-      />
-    </div>
+    /></picture>
   </div>
 </section>
