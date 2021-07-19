@@ -4,11 +4,12 @@
   justify-content: center;
 
   min-width: 162px;
-  padding: 13px 0;
+  padding: 14px 0;
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.125;
+  line-height: 1;
+  // line-height: 1.125;
   // line-height: 1.3125;
   text-transform: capitalize;
 
@@ -22,12 +23,12 @@
   &::after {
     content: '';
     width: 6px;
-    height: 1.125em;
+    height: 1em;
     margin-left: 10px;
 
     background-image: url(../images/icons/buttons/arrow-small.svg);
     background-repeat: no-repeat;
-    background-position: 50% 70%;
+    background-position: 50% 72%;
   }
 
   &:hover,
@@ -36,19 +37,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding: 0 37px;
+    padding: 14px 32px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 0 40px;
-  }
-
-  &--without-icon {
-    min-width: 100%;
-    padding: 6px 14px;
-
-    font-size: 8px;
-    line-height: 1.25;
+    padding: 14px 37px;
   }
 }
 
@@ -69,16 +62,13 @@
 .button--wide {
   min-width: 176px;
   font-size: 14px;
-  padding: 14px 0;
+  padding: 15px 0;
+  line-height: 1;
   // line-height: 1.286;
 
-  // &::after {
-  //   height: 1.286em;
-  // }
-
   @media screen and (min-width: 768px) {
+    padding: 14px 0;
     font-size: 16px;
-    line-height: 1.3125;
   }
 }
 
@@ -99,5 +89,16 @@
 
   @media screen and (min-width: 768px) {
     padding: 0;
+  }
+}
+
+.button--without-icon {
+  min-width: 100%;
+  padding: 6px 14px;
+  font-size: 8px;
+  line-height: 1.25;
+
+  &::after {
+    display: none;
   }
 }
