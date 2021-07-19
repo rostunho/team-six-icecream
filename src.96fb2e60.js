@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/advantages/icon1x1.png":[["icon1x1.e40153a1.png","gr21"],"gr21"],"./../images/advantages/icon2x1.png":[["icon2x1.348e9fa6.png","MA8P"],"MA8P"],"./../images/advantages/icon3x1.png":[["icon3x1.1c2573ad.png","kvC7"],"kvC7"],"./../images/customer-reviews/quotes-min.png":[["quotes-min.263b50b6.png","GMfR"],"GMfR"],"./../images/customer-reviews/Group8-min.png":[["Group8-min.b7c6aef8.png","z9PP"],"z9PP"],"./../images/icons/buttons/arrow-small.svg":[["arrow-small.111008d5.svg","hgUQ"],"hgUQ"],"./../images/icons/buttons/arrow-small-inv.svg":[["arrow-small-inv.7fa30b95.svg","SF3a"],"SF3a"],"./../images/icons/buttons/arrow-large.svg":[["arrow-large.a68d2cf2.svg","ZCak"],"ZCak"],"./../images/demo.jpg":[["demo.090c7c6d.jpg","nKR3"],"nKR3"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-six-icecream/src.872b36b9.js.map
+//# sourceMappingURL=/team-six-icecream/src.96fb2e60.js.map
