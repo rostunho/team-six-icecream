@@ -48,20 +48,46 @@
 
     <script src="./index.js"></script>
     <!-- counter -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="./js/jquery.counterup.min.js"></script>
-
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    
-    <script>
-      
-      jQuery (document).ready(function( $ )
-      {
-      $('.counter').counterUp({
-          delay: 10,
-          time: 1000
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/radialIndicator/1.3.1/radialIndicator.min.js"></script>
+<script>
+                 $(function(){
+                   $('.counter').each(function (index) {
+                     var $t = $(this), value = $t.data('value');
+                     $t = $t.radialIndicator({
+                       frameTime: 120,
+                       barColor: '#87CEEB',
+                       barWidth: 7,
+                       radius: 90, // width of circle
+                       initValue: 0,
+                       roundCorner: true,
+                       percentage: true
+                     })
+                       .viewportChecker({
+                         callbackFunction: function (elem, action) {
+                           $t.animate(value);
+                         }
+                       }).data('counter');
+                   });
+
+});
+</script>
+<script>
+        jQuery (document).ready(function( $ )
+        {
+        $('.counter').counterUp({
+        delay: 10,
+        time: 1000
         });
-         });
-    </script>
+        });
+</script>
+
+
+   
   </body>
 </html>
