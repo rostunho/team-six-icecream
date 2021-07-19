@@ -26,7 +26,7 @@
   background-image: url('../images/about/milk-mobile1.png');
   background-repeat: no-repeat;
   @media (min-width: 1280px) {
-    background-position-y: 180%;
+    background-position: bottom;
   }
   @media (min-resolution: 2dppx) {
     background-image: url('../images/about/milk-mobile2.png');
