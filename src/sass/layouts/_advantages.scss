@@ -3,7 +3,7 @@
   padding-top: 39px;
   padding-bottom: 97px;
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 480px) {
     padding-bottom: 140px;
   }
 }
@@ -15,17 +15,28 @@
   padding: 0;
   flex-direction: column;
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 480px) {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
 .counters__item {
-  width: 156px;
+  width: 230px;
   margin-bottom: 38px;
 
-  @media screen and (min-width: 481px) {
-    width: 222px;
+  @media screen and (min-width: 480px) {
+    width: 230px;
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 180px;
+    margin-right: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 330px;
     margin-right: 30px;
   }
 }
