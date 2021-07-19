@@ -23,7 +23,6 @@
 .about__overlay {
   background-position-y: 91%;
   background-size: 100%;
-
   background-image: url('../images/about/milk-mobile1.png');
   background-repeat: no-repeat;
   @media (min-width: 1280px) {
@@ -57,8 +56,6 @@
     align-self: flex-start;
   }
   @media screen and (min-width: 1280px) {
-    // padding: 0;
-    // margin: 50px 0 0 auto;
     flex-basis: calc((100% - 92px) / 2);
   }
 }
@@ -72,13 +69,12 @@
     flex-basis: auto;
     margin-top: 50px;
     @media screen and (min-width: 1280px) {
-    padding: 0 55px;
+      padding: 0 55px;
+    }
   }
-}
 }
 .about__description {
   padding: 47px 30px 0 30px;
-
   @media screen and (min-width: 768px) {
     padding: 0;
     margin: 50px 0 0 auto;
@@ -91,29 +87,28 @@
   }
 }
 
-.about__description-primery {
+.about {
   font-size: 12px;
   font-weight: 500;
   line-height: 25px;
-  color: $darkTextColor;
-  margin-bottom: 40px;
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
+  &__description-primery {
+    color: $darkTextColor;
+    margin-bottom: 40px;
   }
-}
-.about__description-secondary {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 25px;
-  color: $middleTextColor;
-  margin-bottom: 20px;
+  &__description-secondary {
+    color: $middleTextColor;
+    margin-bottom: 20px;
+  }
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .about__last-text {
+.about__last-text {
+  @media screen and (min-width: 768px) {
     margin-bottom: 62px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 45px;
   }
 }
