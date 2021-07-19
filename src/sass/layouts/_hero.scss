@@ -1,0 +1,63 @@
+.hero {
+  min-height: 502px;
+  background-color: $bgAccentColor;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__container {
+  position: absolute;
+  z-index: 5;
+
+  min-width: 87.5%;
+  height: 100%;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero__section-head {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: 160px;
+  width: 220px;
+}
+
+.hero__useful-info {
+  display: none;
+  position: absolute;
+}
+
+.places {
+  display: none;
+  position: absolute;
+}
+
+.main-picture {
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+
+  width: 171px;
+  height: 410px;
+
+  &__image {
+    position: absolute;
+    z-index: 2;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -9px;
+    left: -81px;
+    z-index: 1;
+
+    width: 346px;
+    height: 344px;
+    background-color: $accentTextColor;
+    border-radius: 50%;
+  }
+}
