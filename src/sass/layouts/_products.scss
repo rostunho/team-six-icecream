@@ -1,0 +1,156 @@
+.products {
+  background-color: $bgPrimaryColor;
+  padding-bottom: 98px;
+  padding-top: 121px;
+}
+.caption {
+  padding-bottom: 144px;
+}
+.products__title {
+  display: block;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 4px;
+  font-family: Titan One;
+  font-weight: normal;
+  color: $bgPrimaryColor;
+  position: relative;
+  // text-align: center;
+}
+.products__title--rose::before {
+  content: '';
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  bottom: 65px;
+  background-image: url('../images/products/mob/mob-ice-cream@1x.png');
+  left: 50%;
+  transform: translateX(-50%);
+}
+.products__title--rose::after {
+  content: '';
+  width: 26px;
+  height: 6px;
+  position: absolute;
+  bottom: -30px;
+  background-image: url('../images/products/circle@1x.png');
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.products__title--brown::before {
+  content: '';
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  bottom: 65px;
+  background-image: url('../images/products/mob/mob-ice-coffee@1x.png');
+  left: 50%;
+  transform: translateX(-50%);
+}
+.products__title--brown::after {
+  content: '';
+  width: 26px;
+  height: 6px;
+  position: absolute;
+  bottom: -30px;
+  background-image: url('../images/products/circle@1x.png');
+  left: 50%;
+  transform: translateX(-50%);
+}
+.products__title--green::before {
+  content: '';
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  bottom: 65px;
+  background-image: url('../images/products/mob/mob-milkshakes@1x.png');
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.products__item {
+  padding-top: 161px;
+  background-color: $bgAccentColor;
+  border-radius: 24px;
+  margin-bottom: 130px;
+}
+
+.products__item::before {
+  display: inline-block;
+  content: '';
+  background-repeat: no-repeat;
+}
+
+// .products__item:nth-child(1)::before {
+//   // width: 249px;
+//   // height: 252px;
+//   // // background-image: url('../images/products/mob/mob-ice-cream@1x.png');
+//   // // position: absolute;
+// }
+
+.products__list {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  flex-direction: column;
+  text-align: center;
+
+  @media screen and (min-width: 481px) {
+    flex-direction: row;
+  }
+}
+
+.products__text {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: DM Sans;
+  color: $bgPrimaryColor;
+  width: 200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 66px;
+}
+// .products__item {
+//   position: relative;
+//   height: 598px;
+//   padding-top: 113px;
+//   &:nth-child(1)::before {
+//     content: '';
+//     display: block;
+//     background-image: url(../images/products/mob/mob-ice-cream@1x.png);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     width: 249px;
+//     height: 252px;
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     transform: translate(-50%, 0);
+//     margin: 0 auto;
+//   }
+//   &:nth-child(2)::before {
+//     content: '';
+//     display: block;
+//     background-image: url(../images/products/desc/desc-ice-coffee@1x.png);
+//     width: 337px;
+//     height: 335px;
+//     position: absolute;
+//   }
+//   &:nth-child(3)::before {
+//     content: '';
+//     display: block;
+//     background-image: url(../images/products/desc/desc-milkshakes@1x.png);
+//     width: 337px;
+//     height: 335px;
+//     position: absolute;
+//   }
+// }
+// .products__card {
+//   background-color: $bgAccentColor;
+//   border-radius: 24px;
+//   height: 485px;
+//   width: 280px;
+// }
