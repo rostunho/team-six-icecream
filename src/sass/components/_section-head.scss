@@ -112,3 +112,26 @@
 .section-head__list {
   display: flex;
 }
+
+.section-head__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.section-head__link {
+  display: block;
+  padding: 7px 14px;
+
+  font-size: 8px;
+  line-height: 1.25;
+  color: $accentColor;
+
+  background-color: $lightTextColor;
+  border-radius: 20px;
+
+  &--invert {
+    color: $lightTextColor;
+    background-color: $accentColor;
+  }
+}
