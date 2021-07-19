@@ -29,7 +29,7 @@
 </symbol>
 
 <symbol id="icon-button_vector" viewBox="0 0 32 32">
-<path fill="none" stroke="" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
+<path d="M1 1l4 4-4 4" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></path>
 </symbol>
 
 <symbol id="icon-arrow-right" viewBox="0 0 32 32">

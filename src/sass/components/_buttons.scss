@@ -1,14 +1,16 @@
 .button {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 
-  min-width: 161.45px;
-  height: 44px;
+  min-width: 162px;
+  padding: 14px 0;
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.3125;
+  line-height: 1;
+  // line-height: 1.125;
+  // line-height: 1.3125;
   text-transform: capitalize;
 
   color: $accentColor;
@@ -18,53 +20,85 @@
   border: none;
   border-radius: 22px;
 
+  &::after {
+    content: '';
+    width: 6px;
+    height: 1em;
+    margin-left: 10px;
+
+    background-image: url(../images/icons/buttons/arrow-small.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 72%;
+  }
+
   &:hover,
   &:focus {
     background-color: $bgBtnHover;
   }
 
   @media screen and (min-width: 768px) {
-    padding: 0 37px;
+    padding: 14px 32px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 0 40px;
+    padding: 14px 37px;
   }
-  &--invert {
-    color: $lightTextColor;
-    background-color: $accentColor;
+}
 
-    &:hover,
-    &:focus {
-      background-color: $bgBtnInvertHover;
-    }
-  }
+.button--invert {
+  color: $lightTextColor;
+  background-color: $accentColor;
 
-  &--small {
-    min-width: 40px;
-    height: 40px;
-    border-radius: 50%;
-
-    @media screen and (min-width: 768px) {
-      padding: 0;
-    }
+  &::after {
+    background-image: url(../images/icons/buttons/arrow-small-inv.svg);
   }
 
-  &--wide {
-    min-width: 176px;
-    font-size: 14px;
-    line-height: 1.286;
-    @media screen and (min-width: 768px) {
-      font-size: 16px;
-      line-height: 1.3125;
-    }
+  &:hover,
+  &:focus {
+    background-color: $bgBtnInvertHover;
+  }
+}
+
+.button--wide {
+  min-width: 176px;
+  font-size: 14px;
+  padding: 15px 0;
+  line-height: 1;
+  // line-height: 1.286;
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
+
+.button--small {
+  align-items: center;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  &::after {
+    content: '';
+    width: 11px;
+    height: 10px;
+    margin-left: 0;
+    background-image: url(../images/icons/buttons/arrow-large.svg);
+    background-position: 50% 50%;
   }
 
-  &--without-icon {
-    min-width: 100%;
-    padding: 6px 14px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+}
 
-    font-size: 8px;
-    line-height: 1.25;
+.button--without-icon {
+  min-width: 100%;
+  padding: 6px 14px;
+  font-size: 8px;
+  line-height: 1.25;
+
+  &::after {
+    display: none;
   }
 }
