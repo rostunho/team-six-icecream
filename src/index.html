@@ -47,6 +47,21 @@
     <script src="./js/slick-carousel.js"></script>
 
     <script src="./index.js"></script>
-    <script src="../src/js/counter.js"></script>
+    <!-- counter -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    
+    <script>
+      
+      jQuery (document).ready(function( $ )
+      {
+      $('.counter').counterUp({
+          delay: 10,
+          time: 1000
+        });
+         });
+    </script>
   </body>
 </html>
