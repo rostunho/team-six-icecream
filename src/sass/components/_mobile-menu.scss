@@ -72,13 +72,13 @@
 }
 
 .mobile-menu__item {
-  border-width: 1px 0 0;
-  border-style: solid;
-  border-color: $borderColor;
+  // border-width: 1px 0 0;
+  // border-style: solid;
+  // border-color: $borderColor;
 
-  &:last-child {
-    border-width: 1px 0;
-  }
+  // &:last-child {
+  //   border-width: 1px 0;
+  // }
 }
 
 .mobile-menu__link {
@@ -90,9 +90,20 @@
   padding: 12px 20px 12px 20px;
 
   color: $lightTextColor;
+
+  border-width: 1px 0 0;
+  border-style: solid;
+  border-color: $borderColor;
+
+  &:last-child {
+    border-width: 1px 0;
+  }
+
   &:hover,
   &:focus {
     color: $accentColor;
+    border-width: 1px 0;
+    border-color: $iconLightColor;
   }
 
   @media screen and(min-width: 768px) {
