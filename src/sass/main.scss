@@ -10,6 +10,8 @@
 @import './base/reset';
 @import './base/typography';
 @import './components/buttons';
+@import './components/section-head';
+@import './components/mobile-menu';
 
 @import './layouts/header';
 @import './layouts/hero';
@@ -20,8 +22,6 @@
 @import './layouts/customer-reviews';
 @import './layouts/contacts';
 @import './layouts/footer';
-
-@import './components/section-head';
 
 @import './example';
 

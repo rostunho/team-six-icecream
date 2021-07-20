@@ -73,6 +73,8 @@
 
   cursor: pointer;
 
+  color: $lightTextColor;
+
   &:hover,
   &:focus {
     color: $accentColor;
@@ -97,6 +99,8 @@
 
 .header__button {
   display: none;
+  padding: 0;
+  height: 44px;
 
   @media screen and(min-width: 768px) {
     display: block;
