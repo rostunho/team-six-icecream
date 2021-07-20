@@ -1,6 +1,12 @@
 .gallery {
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(255, 245, 246, 1) 60%,
+    rgba(255, 245, 246, 1) 40%
+  );
   &__thumb {
     margin: 0 auto;
   }

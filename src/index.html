@@ -20,10 +20,19 @@
     />
   </head>
   <body>
+
+
+
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
 
     <include src="./partials/header.html"></include>
     <main>
+
+      <!-- можна буде пернести в header -->
+       <a href="#" id="toTop" class="totop">
+        <img src="./images/button-top/ice-cream-top.png" alt="to top"><span class="button__top">top</span></img>
+      </a>
+
       <include src="./partials/hero.html"></include>
       <include src="./partials/products.html"></include>
       <include src="./partials/about.html"></include>
@@ -47,6 +56,9 @@
     <script src="./js/slick-carousel.js"></script>
 
     <script src="./index.js"></script>
+
+<!-- button to top -->
+<script src="./js/button-top.js"></script>
     <!-- counter -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
       integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
