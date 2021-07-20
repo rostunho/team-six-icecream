@@ -8,25 +8,26 @@
     }
 }
 .contacts__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: -20px;
     margin-bottom: 54px;
     @media screen and (min-width:768px){
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         margin-bottom: 0;
         margin-left: -20px;
         margin-bottom: 80px;
     }
     @media screen and (min-width:1280px){
-        display: flex;
-        flex-wrap: wrap;
         margin-left: -30px;
         margin-bottom: 85px;
     }
 }
 .contacts__item{
     margin-bottom: 20px;
-    
     @media screen and (max-width:768px) {
         width: 220px; 
     }
@@ -35,16 +36,12 @@
         flex-basis: calc((100% - 3*20px) / 3);
         margin-left: 20px;
         margin-bottom: 0;
-
     }
     @media screen and (min-width:1280px) {
         flex-basis: calc((100% - 3*30px) / 3);
         margin-left: 30px;
     }
 }
-
-
-
 .contacts__locations{
     box-sizing: border-box;
     text-align: center;
@@ -58,6 +55,9 @@
 }
 .contacts-description{
     width: 220px;
+    @media screen and (min-width:1280px) {
+        width: 330px;
+    }
     height: auto;
     padding: 43px 20px 43px 20px;
     box-sizing: border-box;
@@ -66,7 +66,6 @@
     background-color:$bgPrimaryColor;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
-
 .contacts-description__item{
     margin-top: 50px;
     position: relative;
@@ -82,14 +81,12 @@
         height: 1px;
         background: #E1E1E1;
         }
-    
 }
 .contacts-description__item{
    &:last-child{
         &::after{visibility: hidden;} 
     }
 }
-
 .contacts__information{
     margin-bottom: 10px;
     color: $darkTextColor;
@@ -114,12 +111,8 @@
     font-size: 12px;
     line-height: 1.500;
     letter-spacing: 0.04em;
-
-
 }
-
 .contacts{
-
     background-repeat: no-repeat;
     background-image: 
     linear-gradient(
@@ -151,9 +144,13 @@
 
 //buttons//
 .contacts-button__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: -10px;
     @media screen and (min-width:768px){
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         margin-left: -15px;
         justify-content: center;
@@ -195,9 +192,6 @@
     opacity: 0;
     }
 } 
-
-
-
 .modal{
     position: absolute;
     top: 50%;
@@ -229,7 +223,6 @@
     background: none;
     cursor: pointer;
 }
-
 .modal__button{
     align-self: center;
     width: 200px;
@@ -342,7 +335,6 @@
             border-color: #e2476c;
         }
 }
-
 ::placeholder{
     font-weight: 500;
             font-style: normal;
@@ -357,7 +349,6 @@
     
     }
 }
-
 .checkbox-field{
     display: flex;
     align-items: center;
