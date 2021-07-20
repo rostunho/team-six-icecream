@@ -9,7 +9,9 @@
 @import './base/container';
 @import './base/reset';
 @import './base/typography';
+@import './components/buttons';
 
+@import './layouts/header';
 @import './layouts/hero';
 @import './layouts/products';
 @import './layouts/about';
@@ -20,7 +22,6 @@
 @import './layouts/footer';
 
 @import './components/section-head';
-@import './components/buttons';
 
 @import './example';
 
