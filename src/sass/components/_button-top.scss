@@ -3,12 +3,13 @@
   display: inline-block;
   bottom: 30px;
   right: -40px;
-  width: 40px;
-  height: 60px;
+  width: 30px;
+  height: 50px;
   z-index: 1000;
   cursor: pointer;
   text-align: center;
   color: #ffb8ca;
+
   border-radius: 4px;
   background: $bgSecondaryColor;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
@@ -22,19 +23,18 @@
 
 .totop img {
   position: relative;
-  color: #ffb8ca;
+  color: $bgAccentColor;
   transition: all 0.3s ease-in-out;
 }
 
 .totop:hover img {
   cursor: pointer;
-  colorl: #fff;
+  color: $bgAccentColor;
   transition: all 0.3s ease-in-out;
 }
 
 .totop.show {
   opacity: 1;
-  top: 10px;
   visibility: visible;
   right: calc(2%);
 }
@@ -42,11 +42,11 @@
 .button__top {
   display: flex;
   justify-content: center;
+  text-transform: lowercase;
   font-weight: 700;
   font-size: 16px;
   line-height: 1;
-  text-transform: capitalize;
-  color: #d41443;
-  background-color: #ffffff;
+  color: $accentColor;
+  background-color: $bgSecondaryColor;
   cursor: pointer;
 }
