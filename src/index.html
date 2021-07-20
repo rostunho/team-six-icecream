@@ -20,19 +20,15 @@
     />
   </head>
   <body>
-
-
-
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+
+    <!-- можна буде пернести в header -->
+    <!-- <a href="#" id="toTop" class="totop">
+        <img src="./images/button-top/ice-cream-top.png" alt="to top"><span class="button__top">top</span></img>
+      </a> -->
 
     <include src="./partials/header.html"></include>
     <main>
-
-      <!-- можна буде пернести в header -->
-       <a href="#" id="toTop" class="totop">
-        <img src="./images/button-top/ice-cream-top.png" alt="to top"><span class="button__top">up</span></img>
-      </a>
-
       <include src="./partials/hero.html"></include>
       <include src="./partials/products.html"></include>
       <include src="./partials/about.html"></include>
@@ -56,29 +52,55 @@
     <script src="./js/slick-carousel.js"></script>
 
     <script src="./index.js"></script>
+    <<<<<<< HEAD
+
+    <!-- button to top -->
+    <script src="./js/button-top.js"></script>
+    <!-- counter -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+
+    <!-- mobile menu -->
+    <script defer src="./js/mobile-menu.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+    <script>
+      jQuery(document).ready(function ($) {
+        $('.counter').counterUp({
+          delay: 10,
+          time: 1000,
+        });
+      });
+    </script>
+    =======
     <script src="./js/modal.js"></script>
-<!-- button to top -->
-<script src="./js/button-top.js"></script>
+    <!-- button to top -->
+    <script src="./js/button-top.js"></script>
 
     <!-- counter -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<script src="./js/jquery.counterup.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-<script>
-  jQuery(document).ready(function ($) {
-    $('.counter').counterUp({
-      delay: 10,
-      time: 1000
-    });
-  });
-</script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $('.counter').counterUp({
+          delay: 10,
+          time: 1000,
+        });
+      });
+    </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
- <script src="./js/viueportCheker.js"> </script>
- 
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="./js/viueportCheker.js"></script>
 
-
-
-   
+    >>>>>>> main
   </body>
 </html>
