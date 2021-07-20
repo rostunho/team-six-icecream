@@ -73,7 +73,9 @@
   padding-top: 161px;
   background-color: $bgAccentColor;
   border-radius: 24px;
-  margin-bottom: 130px;
+  &:not(:last-child) {
+    margin-bottom: 130px;
+  }
 }
 
 .products__item::before {
@@ -81,7 +83,6 @@
   content: '';
   background-repeat: no-repeat;
 }
-// test branch
 
 // .products__item:nth-child(1)::before {
 //   // width: 249px;

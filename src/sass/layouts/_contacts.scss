@@ -13,6 +13,7 @@
     @media screen and (min-width:768px){
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 0;
         margin-left: -20px;
         margin-bottom: 80px;
     }
@@ -25,18 +26,24 @@
 }
 .contacts__item{
     margin-bottom: 20px;
+    
+    @media screen and (max-width:768px) {
+        width: 220px; 
+    }
+    width: 330px;
     @media screen and (min-width:768px) {
-        flex-basis: calc((100% - 112px) / 3);
+        flex-basis: calc((100% - 3*20px) / 3);
         margin-left: 20px;
+        margin-bottom: 0;
+
     }
     @media screen and (min-width:1280px) {
-        flex-basis: calc((100% - 290px) / 3);
+        flex-basis: calc((100% - 3*30px) / 3);
         margin-left: 30px;
     }
 }
-.contacts__title{
-    visibility: hidden;
-}
+
+
 
 .contacts__locations{
     box-sizing: border-box;
@@ -61,7 +68,7 @@
 }
 
 .contacts-description__item{
-    padding-top: 50px;
+    margin-top: 50px;
     position: relative;
     &::after{
         position: absolute;
@@ -75,7 +82,7 @@
         height: 1px;
         background: #E1E1E1;
         }
-    &:first-child{padding-top: 25px;}
+    
 }
 .contacts-description__item{
    &:last-child{
@@ -117,9 +124,9 @@
     background-image: 
     linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 1) 7%,
-    rgba(255, 245, 246, 1) 7%,
-    rgba(255, 245, 246, 1) 93%,
+    rgba(255, 255, 255, 1) 6%,
+    rgba(255, 245, 246, 1) 6%,
+    rgba(255, 245, 246, 1) 94%,
   );
   @media screen and (min-width:768px) {
     background-image: 
@@ -155,6 +162,7 @@
 .contacts-button__item{
     margin-bottom: 10px;
     @media screen and (min-width:768px) {
+        
         flex-basis: calc((100% - 407px) / 2);
         margin-left: 15px;
         margin-bottom: 0;
@@ -162,7 +170,11 @@
     @media screen and (min-width:1280px) {
         flex-basis: calc((100% - 902px) / 2);
     }
+    button{
+        width: 200px;
+    }
 }
+
 
 //modal//
 .backdrop {
@@ -173,13 +185,13 @@
     height: 100%;
     background-color:rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms linear;
 }
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
     .modal{
-    transform: translate(-50%,-50%) scale(1.2);
+    transform: translate(-50%,-50%) scale(1.1);
     opacity: 0;
     }
 } 
@@ -252,7 +264,7 @@
     font-size: 16px;
     line-height: 1.000;
     letter-spacing: 0.03em;
-    color: $bgPrimaryColor;
+    color:rgba(199, 19, 62, 0.6);
     @media screen and (min-width:480px) {
     font-size: 20px;
     line-height: 1.172;
@@ -275,6 +287,9 @@
     line-height: 1.172;
     letter-spacing: 0.01em;
     color: gray;
+    @media screen and (max-width:480px) {
+        font-size: 10px;
+    }
 }
 .modal-input{
     width: 100%;
@@ -337,6 +352,10 @@
             color: $bgPrimaryColor;
     
     color: rgba(117, 117, 117, 0.5);
+    @media screen and (max-width:480px) {
+        font-size: 10px;
+    
+    }
 }
 
 .checkbox-field{
@@ -373,7 +392,7 @@ background-origin: border-box;
             color: gray;
     
     @media screen and (min-width:480px) {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.172;
     }
     @media screen and (min-width:1200px) {
@@ -391,7 +410,7 @@ background-origin: border-box;
     text-decoration: underline;
     padding-left: 2px;
     @media screen and (min-width:480px) {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.172;
         padding-left: 3px;
     }
