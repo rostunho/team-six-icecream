@@ -67,8 +67,8 @@
   background-image: url('.//../images/advantages/icon1x1.png');
 
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 768px) and (min-resolution: 192dpi),
-    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url('.//../images/advantages/icon1x2.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -81,8 +81,8 @@
   background-image: url('.//../images/advantages/icon2x1.png');
 
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 768px) and (min-resolution: 192dpi),
-    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url('.//../images/advantages/icon2x2.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -95,8 +95,8 @@
   background-image: url('.//../images/advantages/icon3x1.png');
 
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 768px) and (min-resolution: 192dpi),
-    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url('.//../images/advantages/icon3x2.png');
     background-repeat: no-repeat;
     background-position: center;
