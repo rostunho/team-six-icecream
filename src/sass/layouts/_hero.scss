@@ -22,14 +22,14 @@
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+    max-width: 1050px;
     min-height: 665px;
   }
 }
 
 .hero__section-head {
   position: absolute;
-  z-index: 5;
+  z-index: 7;
   width: 220px;
   left: 0;
   bottom: 160px;
@@ -41,7 +41,7 @@
 
   @media screen and(min-width: 1280px) {
     bottom: 292px;
-    left: 115px;
+    left: 0;
 
     width: 280px;
   }
@@ -50,6 +50,7 @@
 .useful-info {
   display: none;
   position: absolute;
+  z-index: 6;
 
   @media screen and(min-width: 768px) {
     display: flex;
@@ -60,7 +61,7 @@
   }
 
   @media screen and(min-width: 1280px) {
-    left: 77px;
+    left: 0;
     bottom: 45px;
     max-width: 420px;
   }
@@ -146,14 +147,14 @@
       height: 69px;
       min-width: 75px;
 
-      right: 115px;
+      right: 18px;
     }
 
     &::after {
       content: '';
 
       position: absolute;
-      z-index: 11;
+      z-index: 4;
       top: -2px;
       right: -10px;
 
@@ -178,7 +179,7 @@
 
   &__quantity {
     position: absolute;
-    z-index: 13;
+    z-index: 5;
 
     top: 0;
     right: 0;
@@ -218,7 +219,7 @@
 
   &__picture {
     position: absolute;
-    z-index: 11;
+    z-index: 3;
 
     width: 168px;
     height: 133px;
@@ -230,7 +231,7 @@
       width: 293px;
       height: 232px;
 
-      right: 109px;
+      right: 0;
     }
   }
 }
@@ -255,7 +256,7 @@
   }
 
   @media screen and(min-width: 1280px) {
-    right: 450px;
+    right: 335px;
     height: 557px;
     width: 236px;
   }
@@ -304,6 +305,11 @@
   border-radius: 50%;
   background-color: $lightTextColor;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $bgBtnHover;
+  }
 
   @media screen and(min-width: 1200px) {
     min-width: 26px;
