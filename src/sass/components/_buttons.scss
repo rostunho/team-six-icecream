@@ -93,18 +93,26 @@
   }
 }
 
-.button--fixed {
-  min-width: 160px;
-  text-transform: none;
-}
+// .button--fixed {
+//   height: 44px;
+//   min-width: 160px;
+//   text-transform: none;
+
+//   &:hover {
+//     background-color: green;
+//   }
+
+//   &-invert {
+//     background-color: $accentColor;
+//   }
+//   &:hover,
+//   &:focus {
+//     background-color: $bgBtnInvertHover;
+//   }
+// }
 
 .button--mobile-menu {
   width: 210px;
   text-transform: none;
   margin: 0 auto;
-
-  // @media screen and(min-width: 768px) {
-  //   margin-left: 30px;
-  //   margin-right: auto;
-  // }
 }
