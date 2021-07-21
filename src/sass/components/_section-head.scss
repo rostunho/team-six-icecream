@@ -130,8 +130,18 @@
   background-color: $lightTextColor;
   border-radius: 20px;
 
+  &:hover,
+  &:focus {
+    background-color: $bgBtnHover;
+  }
+
   &--invert {
     color: $lightTextColor;
     background-color: $accentColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $bgBtnInvertHover;
   }
 }
