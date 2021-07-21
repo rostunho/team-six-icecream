@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__text {
+  font-family: 'Titan One', cursive;
+  font-size: 25px;
+  line-height: 0.905;
+  text-transform: uppercase;
+  letter-spacing: 0;
+
+  color: $accentColor;
+
+  margin-left: 0.76em;
+}
