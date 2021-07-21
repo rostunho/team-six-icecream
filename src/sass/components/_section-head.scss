@@ -138,10 +138,10 @@
   &--invert {
     color: $lightTextColor;
     background-color: $accentColor;
-  }
 
-  &:hover,
-  &:focus {
-    background-color: $bgBtnInvertHover;
+    &:hover,
+    &:focus {
+      background-color: $bgBtnInvertHover;
+    }
   }
 }

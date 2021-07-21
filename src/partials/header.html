@@ -34,7 +34,7 @@
       </button>
     </nav>
 
-    <button type="button" class="button button--fixed header__button">Buy now</button>
+    <button type="button" class="button header__button" data-shop-open>Buy now</button>
   </div>
 </header>
 
@@ -45,7 +45,7 @@
         <use href="./images/header/alt-sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <button class="button button--mobile-menu">Buy now</button>
+    <button class="button button--mobile-menu" data-shop-mob-open>Buy now</button>
     <nav class="mobile-menu__nav">
       <ul class="mobile-menu__list">
         <li class="mobile-menu__item">
@@ -65,5 +65,24 @@
         </li>
       </ul>
     </nav>
+  </div>
+</div>
+
+<div class="shop-modal is-hidden" data-shop data-shop-mob>
+  <div class="container shop-modal__container">
+    <button class="button button--invert shop-modal__button" data-shop-close data-shop-mob-close>
+      X
+    </button>
+    <ul class="shop-modal__list">
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+    </ul>
   </div>
 </div>
