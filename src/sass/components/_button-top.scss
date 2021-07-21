@@ -3,16 +3,16 @@
   display: inline-block;
   bottom: 30px;
   right: -40px;
-  width: 30px;
-  height: 50px;
-  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  z-index: 25;
   cursor: pointer;
   text-align: center;
   color: #ffb8ca;
 
-  border-radius: 4px;
-  background: $bgSecondaryColor;
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  // border-radius: 4px;
+  // background: $bgSecondaryColor;
+  // box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
@@ -47,6 +47,6 @@
   font-size: 16px;
   line-height: 1;
   color: $accentColor;
-  background-color: $bgSecondaryColor;
+  // background-color: $bgSecondaryColor;
   cursor: pointer;
 }
