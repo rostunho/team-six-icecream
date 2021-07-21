@@ -7,21 +7,21 @@
   );
 }
 .container--gallery_two {
-  min-width: 320px;
-  padding: 0 20px;
+  min-width: 300px;
+  padding: 0 4.1%;
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
-    padding: 0 20px;
+    padding: 0 8.4%;
   }
 
   @media screen and (min-width: 768px) {
-    padding: 0 34px;
+    padding: 0 9.4%;
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
-    padding: 0 115px;
+    padding: 0 10.55%;
   }
 }
 .gread__item {
@@ -31,18 +31,7 @@
   }
 }
 .masonry__img {
-  border-radius: 5px;
-  @media screen and (min-width: 480px) {
-    border-radius: 12px;
-  }
-
-  @media screen and (min-width: 768px) {
-    border-radius: 17px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    border-radius: 20px;
-  }
+  border-radius: 14.2%;
 }
 .gread__list {
   margin-left: auto;
@@ -53,7 +42,7 @@
   grid-gap: 4px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 300px) {
   .gread__list {
     grid-gap: 8px;
     grid-template-columns: repeat(7, 1fr);
