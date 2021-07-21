@@ -302,11 +302,17 @@
   height: 18px;
   border: none;
   border-radius: 50%;
+  background-color: $lightTextColor;
+  cursor: pointer;
 
   @media screen and(min-width: 1200px) {
     min-width: 26px;
     height: 26px;
   }
+
+  // @media screen and (min-width: 768px) {
+  //   padding: 0;
+  // }
 
   &::after {
     content: '';
@@ -321,9 +327,5 @@
       width: 8px;
       height: 8px;
     }
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: 0;
   }
 }
