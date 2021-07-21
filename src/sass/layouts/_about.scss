@@ -23,30 +23,24 @@
 .about__overlay {
   background-position-y: 91%;
   background-size: 100%;
-  background-image: url('../images/about/milk-mobile1.png');
   background-repeat: no-repeat;
-  @media (min-width: 1280px) {
-    background-position: bottom;
-  }
-  @media (min-resolution: 2dppx) {
+  background-image: url('../images/about/milk-mobile1.png');
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/about/milk-mobile2.png');
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     background-image: none;
   }
-}
-
-@media (min-width: 1280px) {
-  .overlay {
+  @media (min-width: 1280px) {
+    background-position: bottom;
     background-image: url('../images/about/milk-desctop1.png');
-  }
-  @media (min-resolution: 2dppx) {
-    .overlay {
-      background-image: url('../images/about/milk-desctop1.png');
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/milk-desctop2.png');
     }
   }
 }
-
 .about__content-picture {
   margin-top: 26px;
   align-self: center;
