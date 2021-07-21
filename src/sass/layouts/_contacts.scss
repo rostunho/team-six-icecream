@@ -176,6 +176,7 @@
 //modal//
 .backdrop {
     position: fixed;
+    z-index: 20;
     top: 0;
     left: 0;
     width: 100%;
@@ -186,6 +187,7 @@
 }
 .backdrop.is-hidden{
     opacity: 0;
+    z-index: 20;
     pointer-events: none;
     .modal{
     transform: translate(-50%,-50%) scale(1.1);
@@ -194,6 +196,7 @@
 } 
 .modal{
     position: absolute;
+    
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -203,14 +206,14 @@
     transform: translate(-50%,-50%) scale(1) perspective(600px) rotateY(45eg);
     opacity: 1;
     transition: scale 1200ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width:480px) {
-        min-width: 450px;
-        min-height: 609px;
-    }
-    @media screen and (min-width:1200px) {
-        min-width: 528px;
-        min-height: 581px;
-    }
+    @media screen and (max-width:479px) {
+        min-width: 490px;
+        min-height: 450px;
+    }    
+        min-width: 475px;
+        min-height: 450px;
+    
+    
 }
 .modal__button_close{
     position: absolute;
@@ -222,6 +225,10 @@
     
     background: none;
     cursor: pointer;
+    .icon-modal-close svg{
+        
+        fill:green
+    }
 }
 .modal__button{
     align-self: center;
@@ -268,8 +275,8 @@
 }
 .modal-form{
     display: flex;
-    flex-direction: column;
-    padding: 40px;
+    justify-content: center;
+    
 }
 .modal-field{
     display: inline-block;
@@ -311,8 +318,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 18px;
-    height: 18px;
+    max-width: 450px;
+    max-height: 900px;
     transform: translateY(-50%);
     top: 50%;
     left: 12px;
