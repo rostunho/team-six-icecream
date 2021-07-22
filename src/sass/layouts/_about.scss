@@ -106,3 +106,40 @@
     margin-bottom: 45px;
   }
 }
+
+
+.more-modal {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms linear;
+}
+.more-modal.is-hidden{
+  opacity: 0;
+  z-index: 20;
+  pointer-events: none;
+ 
+} 
+
+.more-modal__text {
+  display: flex;
+  align-self: center;
+  margin-top: 68px;
+
+}
+
+.more-modal__item {
+  padding: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  color: $darkTextColor;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 3px solid $accentTextColor;
+  border-radius: 24px;
+}
