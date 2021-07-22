@@ -1,3 +1,17 @@
+//  "магазин"
+const openShop = document.querySelector('.button--open-modal');
+const closeShop = document.querySelector('[data-shop-close]');
+const shop = document.querySelector('.shop-modal');
+
+if (openShop) {
+    openShop.addEventListener("click", function (e) {
+        shop.classList.toggle('shop-modal--is-hidden')
+    })
+    closeShop.addEventListener("click", function (e) {
+        shop.classList.toggle('shop-modal--is-hidden')
+    })
+}
+
 // бургер-меню
 
 const openMenu = document.querySelector('.site-nav__button-open');
@@ -11,7 +25,9 @@ if (openMenu) {
     closeMenu.addEventListener("click", function (e) {
         menu.classList.toggle('mobile-menu--is-active')
     })
+
 }
+
 
 
 // скрол по кліку
