@@ -129,19 +129,21 @@
 }
 } 
 
-.more-modal__container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: $bgPrimaryColor;
-    opacity: 1;
+.more-modal__container {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
+    // background-color: $bgPrimaryColor;
+    // opacity: 1;
     transition: scale 1200ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .more-modal__text {
   display: flex;
   align-self: center;
+  overflow: scroll;
+  margin-top: 30px;
 }
 
 .more-modal__item {
