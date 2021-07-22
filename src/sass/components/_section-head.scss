@@ -1,17 +1,6 @@
 .section-head {
   margin: 0 auto;
 
-  transition-property: transition, opacity;
-  transition-duration: $animationDuration;
-  transition-timing-function: $animationBezier;
-  transform: translateX(-100px);
-  opacity: 0;
-
-  &--is-active {
-    transform: translateX(0);
-    opacity: 1;
-  }
-
   &--master {
     margin-left: 0px;
   }
