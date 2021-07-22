@@ -14,7 +14,7 @@
 }
 
 .shop-modal__button {
-  margin-top: 40px;
+  margin-top: 41px;
   margin-left: auto;
 
   &::after {
@@ -25,6 +25,7 @@
 .shop-modal__list {
   display: flex;
   flex-wrap: wrap;
+  overflow: scroll;
   margin-top: 68px;
   margin-left: -30px;
   margin-bottom: -30px;
@@ -37,7 +38,7 @@
 
   background-color: rgba(255, 255, 255, 0.5);
   height: 220px;
-  border: 3px solid $accentTextColor;
+  // border: 1px solid $accentTextColor;
   border-radius: 24px;
 
   @media screen and(min-width: 768px) {
