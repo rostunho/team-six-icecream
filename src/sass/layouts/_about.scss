@@ -123,14 +123,25 @@
   opacity: 0;
   z-index: 20;
   pointer-events: none;
- 
+ .more-modal__container {
+  transform: translate(-50%,-50%) scale(1.1);
+    opacity: 1;
+}
 } 
+
+.more-modal__container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: $bgPrimaryColor;
+    opacity: 1;
+    transition: scale 1200ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .more-modal__text {
   display: flex;
   align-self: center;
-  margin-top: 68px;
-
 }
 
 .more-modal__item {
@@ -139,7 +150,5 @@
   font-weight: 500;
   line-height: 25px;
   color: $darkTextColor;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 3px solid $accentTextColor;
-  border-radius: 24px;
+  background-color: $bgPrimaryColor;
 }
