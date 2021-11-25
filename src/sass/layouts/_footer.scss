@@ -1,3 +1,19 @@
+//animation-social-icon//
+@keyframes social-icon-anime {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 44, 44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204, 44, 97, 0.5);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 15px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 15px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+///
 .footer {
   background-color: $bgSecondaryColor;
   padding-top: 113px;
@@ -96,6 +112,7 @@
     height: 32px;
     border-radius: 50%;
     background-color: $iconLightColor;
+    animation: social-icon-anime 2000ms infinite 750ms;
     @media screen and(min-width:768px) {
       width: 34px;
       height: 34px;
@@ -103,6 +120,8 @@
     &:hover,
     &:focus {
       background-color: $accentColor;
+
+      transform: scale(1.2);
     }
   }
   &__icon {
@@ -115,6 +134,10 @@
   font-size: 12px;
   line-height: 1.86;
   color: $darkTextColor;
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
   @media screen and(min-width:768px) {
     font-size: 14px;
   }
